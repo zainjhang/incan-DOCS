@@ -1,0 +1,7 @@
+site_name: Incan Documentation
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: amber
+      accent: amber

@@ -1,0 +1,6934 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../0_1/">
+      
+      
+        <link rel="next" href="../../snippets/module_state/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Release 0.2 - Incan Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#release-02" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Incan Documentation" class="md-header__button md-logo" aria-label="Incan Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Incan Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Release 0.2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Incan Documentation" class="md-nav__button md-logo" aria-label="Incan Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Incan Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incan Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incan Roadmap (Status-Focused)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stability policy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RFCs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            RFCs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFCs (Design records)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/003_frontend_wasm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 003: frontend and WebAssembly support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/004_async_fixtures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 004: async fixtures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/006_generators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 006: Python-style generators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/009_sized_integers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 009: Sized numeric types and builtin type registry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/010_tempfile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 010: Python-style tempfile standard library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/014_generated_code_error_handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 014: user-facing runtime error behavior for generated code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/015_hatch_like_tooling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 015: hatch-like tooling (project lifecycle CLI)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/016_loop_and_break_value/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 016: loop and break &lt;value&gt; (Loop Expressions)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/017_validated_newtypes_with_implicit_coercion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 017: Validated newtypes with implicit coercion (pydantic-like feel)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/018_testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 018: language primitives for testing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/019_runner_testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 019: test runner, CLI, and ecosystem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/020_offline_locked_reproducible_builds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 020: offline / locked / reproducible builds (Cargo policy + generated project contract)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/024_extensible_derive_protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 024: extensible derive protocol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/025_multi_instantiation_trait_dispatch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 025: multi-instantiation trait dispatch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/028_trait_based_operator_overloading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 028: trait-based operator overloading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/029_union_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 029: union types and type narrowing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/030_std_collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 030: std.collections — extended collection types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/032_value_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 032: value enums — StrEnum and IntEnum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/033_ctx_keyword/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 033: ctx — typed configuration context
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/034_incan_pub_registry/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 034: incan.pub — The Incan Package Registry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/036_user_defined_decorators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 036: user-defined decorators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/037_native_web_stdlib_redesign/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 037: native web and HTTP stdlib redesign
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/038_variadic_positional_args_and_keyword_capture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 038: Variadic Positional Args and Keyword-Argument Capture (*args / **kwargs)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/039_race_for_awaitable_concurrency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 039: race for awaitable concurrency
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/040_scoped_dsl_glyph_surfaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 040: Scoped DSL Glyph Surfaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/043_rust_trait_impl_from_incan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 043: Rust Trait Implementation from Incan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/044_open_ended_trait_methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 044: Open-Ended Trait Methods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/045_scoped_dsl_symbol_surfaces/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 045: Scoped DSL symbol surfaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/046_computed_properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 046: Computed properties (property name -&gt; Type)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/047_lightweight_directed_graph_stdlib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 047: Lightweight directed graph types (stdlib)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/048_contract_backed_models_emit_and_tooling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 048: Contract-backed models, Incan emit, and interrogation tooling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/049_single_arm_conditional_match/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 049: if let single-arm conditional match
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/050_enum_methods_and_trait_adoption/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 050: Enum methods and enum trait adoption
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/051_json_value/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 051: JsonValue for std.json
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/053_formatter_vertical_spacing_buckets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 053: Formatter vertical spacing (three blank-line buckets)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/055_std_fs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 055: std.fs — pathlib-shaped filesystem APIs with chunked file I/O
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/056_std_io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 056: std.io — in-memory byte streams and binary parsing helpers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/057_rust_allow_targeted_lint_suppression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 057: @rust.allow(...) — targeted Rust lint suppression for generated code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/058_std_datetime/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 058: std.datetime — temporal values, intervals, and runtime timing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/059_std_regex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 059: std.regex — regular expressions, matches, captures, and replacement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/060_std_uuid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 060: std.uuid — UUID parsing, generation, and formatting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/061_std_compression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 061: std.compression — codec-based compression and decompression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/062_std_archive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 062: std.archive — archive container creation and extraction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/063_std_process/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 063: std.process — process spawning and command execution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/064_std_encoding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 064: std.encoding — binary-text encoding and decoding utilities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/065_std_hash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 065: std.hash — stable hashing primitives for data and integrity workflows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/066_std_http/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 066: std.http — Incan-first HTTP client and request/response surface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/067_std_ci/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 067: std.ci — deterministic CI and automation scripting primitives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/068_protocol_hooks_for_core_language_syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 068: protocol hooks for core language syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/TEMPLATE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC Template
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_52" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_52" id="__nav_5_52_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Closed
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_52_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_52">
+            <span class="md-nav__icon md-icon"></span>
+            Closed
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_52_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_52_1" id="__nav_5_52_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Implemented
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_52_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_52_1">
+            <span class="md-nav__icon md-icon"></span>
+            Implemented
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/000_core_rfc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 000: Incan Core Language RFC (Phase 1)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/005_rust_interop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 005: Rust Interop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/008_const_bindings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 008: Const Bindings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/011_fstring_error_spans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 011: Precise Error Spans in F-Strings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/013_rust_crate_dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 013: Rust Crate Dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/021_model_field_metadata_and_aliases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 021: Model field metadata and schema-safe aliases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/022_stdlib_namespacing_and_compiler_handoff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 022: Namespaced stdlib modules and compiler→stdlib handoff
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/023_compilable_stdlib_and_rust_module_binding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 023: Compilable Stdlib &amp; Rust Module Binding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/027_incan_vocab_crate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 027: incan-vocab — Library Vocabulary Registration Crate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/031_library_system_phase1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 031: Incan Library System — Phase 1 (Local Path Dependencies)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/035_first_class_function_references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 035: First-Class Named Function References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/041_first_class_rust_interop_authoring/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 041: First-Class Rust Interop Authoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/042_traits_are_always_abstract/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 042: Traits Are Always Abstract
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/052_module_static_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 052: Module Static Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/implemented/054_explicit_call_site_generics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 054: Explicit call-site generic arguments for function and method calls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_52_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_52_2" id="__nav_5_52_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Superseded
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_52_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_52_2">
+            <span class="md-nav__icon md-icon"></span>
+            Superseded
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/superseded/001_test_fixtures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 001: Test Fixtures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/superseded/002_test_parametrize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 002: Parametrized Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/superseded/007_inline_tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 007: Inline Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/superseded/012_json_value_enum_methods_and_trait_adoption/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 012: JsonValue, enum methods, and enum trait adoption
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RFCs/closed/superseded/026_user_defined_trait_bridges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RFC 026: User-Defined Trait Bridges
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+     snippets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+             snippets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/rfcs_refs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rfcs refs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Callouts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Callouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/callouts/beta_expectations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Beta expectations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/callouts/generated_doc_warning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generated doc warning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/callouts/no_install_fallback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    No install fallback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/commands/install_build_run/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install build run
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/contributing/compiler_pipeline_checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compiler pipeline checklist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Language
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Language
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_1" id="__nav_6_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Callouts
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Callouts
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/language/callouts/derives_vs_dunders_vs_traits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives vs dunders vs traits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_2" id="__nav_6_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Decorators
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Decorators
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/language/decorators/staticmethod/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Staticmethod
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_3" id="__nav_6_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Examples
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Examples
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/language/examples/match_arms_rust_style/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Match arms rust style
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tables
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../_snippets/tables/rfcs_index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rfcs index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing: Start here
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Explanation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Explanation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/explanation/architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incan Compiler Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/explanation/layering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layering Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/explanation/readable-maintainable-rust/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Readable &amp; Maintainable Rust: A Practical Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/explanation/stdlib_testing_internals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.testing — compiler internals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How to
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            How to
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/how-to/authoring_vocab_crates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Author Library DSLs with incan_vocab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/how-to/benchmarks_and_profiling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benchmarks &amp; profiling (repository)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/how-to/ci_and_automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CI &amp; automation (repository / contributors)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/how-to/extending_language/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extending Incan: Builtins vs New Syntax
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/how-to/writing_rfcs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Writing RFCs (how-to)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4_1" id="__nav_7_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incan Contributor Book (Advanced, Rust-first)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/01_architecture_tour/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Architecture tour
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/02_layering_and_boundaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Layering and boundaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/03_proposals_issues_vs_rfcs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Proposals: issues vs RFCs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/04_add_a_builtin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Your first change: add a builtin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/05_add_new_syntax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Your first syntax change
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/06_tooling_loop_formatter_and_tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Tooling loop: formatter + tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/07_tooling_loop_lsp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Tooling loop: LSP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/tutorials/book/08_docsite_contributor_loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Docsite contributor loop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Language
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Language
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Language: Start here
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Explanation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Explanation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/call_site_type_arguments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why Call-Site Type Arguments Exist
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/closures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Closures (Arrow Functions)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/consts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Const bindings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/control_flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/derives_and_traits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives and traits (Explanation)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enums in Incan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/error_handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/how_derives_work/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How derives work (Explanation)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/how_incan_works/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How Incan works
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/imports_and_modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports and modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/scopes_and_name_resolution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scopes &amp; Name Resolution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/static_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module static storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/traits_as_language_hooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Traits as language hooks (and overloading)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/why_incan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why Incan?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/why_not_just_rust/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why not just Rust?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_16" id="__nav_8_2_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Models and classes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_16">
+            <span class="md-nav__icon md-icon"></span>
+            Models and classes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/models_and_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models and Classes in Incan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/models_and_classes/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/explanation/models_and_classes/models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How to
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            How to
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/async_programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Async Programming in Incan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/customize_derived_behavior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Customize derived behavior (How-to)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/error_handling_recipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error handling recipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/error_messages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Understanding Incan Error Messages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/file_io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File I/O in Incan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/imports_and_modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports and modules (how-to)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/modeling_with_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modeling with enums
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/module_state/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module state (how-to)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/performance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Performance
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/rust_interop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rust Interoperability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/rust_types_for_python_devs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Understanding Rust types (coming from Python)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/string_processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    String processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/how-to/testing_stdlib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.testing standard library guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/derives_and_traits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives and Traits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/file_io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File I/O reference (Path, File, and IoError)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/imports_and_modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Imports and modules (reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/language/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incan language reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/numeric_semantics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Numeric semantics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/reflection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reflection (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/static_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Static storage (reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Strings and bytes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4_11" id="__nav_8_4_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Derives
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            Derives
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/derives/comparison/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives: Comparison (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/derives/copying_default/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives: Copying and Default (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/derives/custom_behavior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives: Custom behavior (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/derives/serialization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives: Serialization (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/derives/string_representation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives: String representation (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/derives/validation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Derives: Validation (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4_12" id="__nav_8_4_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Stdlib
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_12">
+            <span class="md-nav__icon md-icon"></span>
+            Stdlib
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standard library reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib/async/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.async (reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib/derives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.derives.* (reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib/math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.math reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib/reflection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.reflection (reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.testing (reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib/traits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    std.traits.* (reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4_13" id="__nav_8_4_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Stdlib traits
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            Stdlib traits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib_traits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stdlib traits (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib_traits/callable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Callable objects (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib_traits/collection_protocols/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Collection protocols (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib_traits/conversions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conversion traits (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib_traits/error/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error trait
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib_traits/indexing_and_slicing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indexing and slicing (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/reference/stdlib_traits/operators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operator traits (Reference)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/build_your_first_api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Build your first API (tutorial)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/web_framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_5_3" id="__nav_8_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Book
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Book
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Incan Book (Basics)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/01_hello_world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Hello world
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/02_values_variables_and_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Values, variables, and types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/03_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/04_control_flow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Control flow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/05_modules_and_imports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Modules and imports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/06_errors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Errors (Result/Option and ?)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/07_strings_and_formatting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Strings and formatting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/08_collections_and_iteration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Collections and iteration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/09_enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Enums and better match
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/10_models_vs_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Models vs classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/11_traits_and_derives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Traits and derives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/12_newtypes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Newtypes (stronger types)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../language/tutorials/book/13_unit_tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Release notes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Release notes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../0_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release 0.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Release 0.2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Release 0.2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-02-is-about" class="md-nav__link">
+    <span class="md-ellipsis">
+      What 0.2 is about
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrating-from-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrating from 0.1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migrating from 0.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-move-stdlib-imports-to-std" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Move stdlib imports to std.*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-move-decorators-onto-their-namespaced-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Move decorators onto their namespaced modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-split-incan-dependencies-from-rust-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Split Incan dependencies from Rust dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-import-stdasync-and-stdtesting-in-the-files-that-use-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Import std.async and std.testing in the files that use them
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-avoid-reserved-namespace-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Avoid reserved namespace names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-02-delivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      What 0.2 delivers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What 0.2 delivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-namespaced-source-authored-stdlib" class="md-nav__link">
+    <span class="md-ellipsis">
+      A namespaced, source-authored stdlib
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-much-stronger-rust-interop-story" class="md-nav__link">
+    <span class="md-ellipsis">
+      A much stronger Rust interop story
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incan-libraries-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incan Libraries (Experimental)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consuming-a-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consuming a library
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-static-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Static Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-site-type-arguments-rfc-054-266-call-site-type-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call-site type arguments ([RFC 054], #266) {#call-site-type-arguments}
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-v02-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other v0.2 features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features-and-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features and Enhancements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bugfixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bugfixes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-limitations-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known limitations (0.2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rfcs-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      RFCs implemented
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Snippets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Snippets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snippets/module_state/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module state
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../snippets/module_state_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Module state code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Start here
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Start here
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start_here/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start here
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start_here/beginner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Beginner path
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start_here/coming_from_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coming from Python (apps)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start_here/coming_from_rust/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coming from Rust (evaluator)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../start_here/pipelines_and_automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pipelines &amp; automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tooling
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Tooling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tooling: Start here
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_2" id="__nav_12_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Explanation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            Explanation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/explanation/lsp_architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LSP architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/explanation/projects_today/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Projects today
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    How to
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_3">
+            <span class="md-nav__icon md-icon"></span>
+            How to
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/ci_and_automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CI &amp; automation (projects / CLI-first)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/dependencies/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing dependencies
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/editor_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Editor &amp; IDE Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/formatting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incan Code Formatting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/install_and_run/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Install, build, and run (make-first)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/lsp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Incan Language Server (LSP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/testing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Testing in Incan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/how-to/troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_4" id="__nav_12_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_4">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/reference/cli_reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CLI reference
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/reference/lsp_protocol_support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LSP protocol support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/reference/project_configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project configuration (incan.toml)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_12_5" id="__nav_12_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/tutorials/getting_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Incan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/tutorials/pipeline_mini_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pipeline mini-project (tutorial)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tooling/tutorials/your_first_project/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your first Incan project
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-02-is-about" class="md-nav__link">
+    <span class="md-ellipsis">
+      What 0.2 is about
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#migrating-from-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrating from 0.1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Migrating from 0.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-move-stdlib-imports-to-std" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Move stdlib imports to std.*
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-move-decorators-onto-their-namespaced-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Move decorators onto their namespaced modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-split-incan-dependencies-from-rust-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Split Incan dependencies from Rust dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-import-stdasync-and-stdtesting-in-the-files-that-use-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Import std.async and std.testing in the files that use them
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-avoid-reserved-namespace-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Avoid reserved namespace names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-02-delivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      What 0.2 delivers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What 0.2 delivers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-namespaced-source-authored-stdlib" class="md-nav__link">
+    <span class="md-ellipsis">
+      A namespaced, source-authored stdlib
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-much-stronger-rust-interop-story" class="md-nav__link">
+    <span class="md-ellipsis">
+      A much stronger Rust interop story
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#incan-libraries-experimental" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incan Libraries (Experimental)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-a-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consuming-a-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consuming a library
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-static-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module Static Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-site-type-arguments-rfc-054-266-call-site-type-arguments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call-site type arguments ([RFC 054], #266) {#call-site-type-arguments}
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-v02-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other v0.2 features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features-and-enhancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features and Enhancements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bugfixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bugfixes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#known-limitations-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Known limitations (0.2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rfcs-implemented" class="md-nav__link">
+    <span class="md-ellipsis">
+      RFCs implemented
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="release-02">Release 0.2</h1>
+<p>Incan 0.2 is the release where the language surface becomes more explicit, more modular, and much more serious about Rust interop.</p>
+<p>The headline breaking change is that stdlib imports and decorators now live under the <code>std.*</code> namespace. That affects everyday code immediately, but it is not cosmetic churn. It is the release boundary that moves Incan away from a compiler with lots of baked-in domain knowledge and toward a language where web, testing, async, derives, and trait surfaces are authored and imported as named library modules.</p>
+<p>If you already know Python and Rust, the point of <code>0.2</code> is not to hide Rust from you. It is to give you a Python-shaped language with a clearer path into Rust crates, Rust types, and Rust-backed capabilities, while still treating borrowing and most Rust-specific mechanics as compiler concerns rather than user-facing bookkeeping.</p>
+<p>That same theme shows up across the rest of the release:</p>
+<ul>
+<li>projects can now distinguish Incan library dependencies from Rust crate dependencies in <code>incan.toml</code></li>
+<li>Rust interop is no longer just an escape hatch; it has a clearer authoring model, stronger docs, and much better compiler/runtime support</li>
+<li>library projects can export public APIs for other Incan projects to consume</li>
+<li>modules can now own runtime state through <code>static</code></li>
+<li>generic calls can now spell explicit call-site type arguments</li>
+<li>the stdlib/compiler boundary is much cleaner than it was in <code>0.1</code></li>
+</ul>
+<p>If you are migrating from <code>0.1</code>, focus on the migration section first. If you want the short version, most existing projects need three concrete updates:</p>
+<ol>
+<li>move stdlib imports and decorators to <code>std.*</code></li>
+<li>rename Rust dependency tables in <code>incan.toml</code></li>
+<li>add explicit <code>std.async</code> / <code>std.testing</code> imports in files that use those language surfaces</li>
+</ol>
+<p>For the core reference material, start with <a href="../../language/reference/imports_and_modules/">Imports and modules</a>, the <a href="../../language/reference/stdlib/">standard library reference</a>, and the <a href="../../language/reference/">language reference index</a>.</p>
+<h2 id="what-02-is-about">What 0.2 is about</h2>
+<p>The <code>0.1</code> line proved out the compiler, core language, and early tooling. <code>0.2</code> turns that into a more coherent platform:</p>
+<ul>
+<li>the stdlib is no longer presented as a bag of magical global names</li>
+<li>compiler features that used to feel special-cased are pushed toward import-driven library surfaces</li>
+<li>the Rust boundary is more explicit: crate dependencies, <code>rust::</code> imports, <code>rusttype</code>, <code>interop:</code> adapters, and trait/capability-oriented interop all fit together better than they did in <code>0.1</code></li>
+<li>projects now have a clearer dependency model and a first real story for sharing Incan code across repositories</li>
+<li>the language picks up a few missing “this should just exist” capabilities such as <code>static</code>, list concatenation, list extension, and explicit call-site generic arguments</li>
+</ul>
+<p>This is still an incremental release rather than a final shape. Libraries are explicitly experimental, some runtime/library edges are still being refined, and <code>0.3</code> will continue improving ownership ergonomics and generated-runtime behavior. But <code>0.2</code> does make the language and tooling feel more coherent than <code>0.1</code>.</p>
+<p>If you want the broader conceptual backdrop, the best follow-up pages are <a href="../../language/explanation/imports_and_modules/">Imports and modules</a>, <a href="../../language/explanation/static_storage/">Static storage</a>, <a href="../../language/explanation/derives_and_traits/">Derives and traits</a>, and <a href="../../language/explanation/how_incan_works/">How Incan works</a>.</p>
+<h2 id="migrating-from-01">Migrating from 0.1</h2>
+<p>Use this when moving a <code>0.1</code> codebase to <code>0.2</code>.</p>
+<h3 id="1-move-stdlib-imports-to-std">1. Move stdlib imports to <code>std.*</code></h3>
+<p>All stdlib imports move from bare module names to the <code>std.*</code> namespace:</p>
+<pre><code class="language-incan"># Before (0.1)
+from web import App, Response, Json
+from testing import assert_eq, assert_ne
+
+# After (0.2)
+from std.web import App, Response, Json
+from std.testing import assert_eq, assert_ne
+</code></pre>
+<p>This also applies to async modules:</p>
+<pre><code class="language-incan"># Before (0.1)
+from async.time import sleep
+
+# After (0.2)
+from std.async.time import sleep
+</code></pre>
+<p>Types like <code>App</code>, <code>Response</code>, <code>Html</code>, <code>Json</code>, and <code>Query</code> are no longer implicitly available. Import them from <code>std.web</code> in each file that uses them.</p>
+<p>See also: <a href="../../language/reference/imports_and_modules/">Imports and modules (reference)</a>, <a href="../../language/reference/stdlib/">Stdlib index</a></p>
+<h3 id="2-move-decorators-onto-their-namespaced-modules">2. Move decorators onto their namespaced modules</h3>
+<p>Decorators now resolve by module path rather than as ambient global names. The preferred style is to import the decorator and use the short local name:</p>
+<pre><code class="language-incan">from std.web.routing import route
+
+@route(&quot;/hello&quot;)
+async def hello() -&gt; str:
+    return &quot;Hello!&quot;
+</code></pre>
+<p>The canonical fully qualified path also works:</p>
+<pre><code class="language-incan">@std.web.routing.route(&quot;/hello&quot;)
+async def hello() -&gt; str:
+    return &quot;Hello!&quot;
+</code></pre>
+<p>The same rule applies to testing markers:</p>
+<pre><code class="language-incan">import std.testing as testing
+
+@testing.skip(&quot;not implemented&quot;)
+def test_future() -&gt; None:
+    pass
+</code></pre>
+<p><code>@skip</code>, <code>@xfail</code>, <code>@slow</code>, <code>@fixture</code>, and <code>@parametrize</code> are test-runner metadata from <code>std.testing</code>. They are not runtime function calls.</p>
+<p>See also: <a href="../../language/reference/stdlib/testing/">std.testing (reference)</a>, <a href="../../language/how-to/testing_stdlib/">Testing with the stdlib</a></p>
+<h3 id="3-split-incan-dependencies-from-rust-dependencies">3. Split Incan dependencies from Rust dependencies</h3>
+<p><code>0.2</code> separates <strong>Incan Library</strong> dependencies from <strong>Rust crate</strong> dependencies in <code>incan.toml</code>:</p>
+<ul>
+<li><code>[dependencies]</code> is now for Incan libraries</li>
+<li><code>[rust-dependencies]</code> is for Rust crates</li>
+<li><code>[rust-dev-dependencies]</code> replaces <code>[dev-dependencies]</code> for Rust dev crates</li>
+</ul>
+<p>If you leave Rust crates under <code>[dependencies]</code>, the CLI emits a targeted migration error instead of silently accepting the old structure.</p>
+<p>This is also the release where the Rust boundary becomes easier to understand as a system: Rust crates belong in manifest-level Rust dependency tables, while Incan code imports them through <code>from rust import ...</code> / <code>from rust::... import ...</code> and can describe wrapped Rust types with <code>rusttype</code>.</p>
+<p>See also: <a href="../../language/how-to/rust_interop/">Rust interop</a>, <a href="../../language/how-to/rust_types_for_python_devs/">Understanding Rust types (coming from Python)</a></p>
+<h3 id="4-import-stdasync-and-stdtesting-in-the-files-that-use-them">4. Import <code>std.async</code> and <code>std.testing</code> in the files that use them</h3>
+<p><code>async</code> / <code>await</code> and <code>assert</code> are import-activated surfaces in <code>0.2</code>.</p>
+<p>If a file uses async syntax, import <code>std.async</code> or one of its submodules in that same file. If a file uses the <code>assert</code> statement or testing decorators, import <code>std.testing</code> in that file as well.</p>
+<p>See also: <a href="../../language/how-to/async_programming/">Async programming</a>, <a href="../../language/reference/stdlib/async/">std.async (reference)</a></p>
+<h3 id="5-avoid-reserved-namespace-names">5. Avoid reserved namespace names</h3>
+<p><code>std</code> and <code>rust</code> are now reserved at module scope and can no longer be used as declaration names.</p>
+<h2 id="what-02-delivers">What 0.2 delivers</h2>
+<h3 id="a-namespaced-source-authored-stdlib">A namespaced, source-authored stdlib</h3>
+<p>The most important architectural change in <code>0.2</code> is that stdlib features are now presented as explicit modules instead of ambient compiler surface. Web, testing, async, derives, traits, and related surfaces are increasingly defined through ordinary stdlib modules and metadata rather than bespoke compiler branches. That gives users a more readable import story and gives contributors a cleaner place to evolve the standard library.</p>
+<p>For the new stdlib surface, start with <a href="../../language/reference/stdlib/">std.* module reference</a>, <a href="../../language/reference/stdlib/testing/">std.testing</a>, <a href="../../language/reference/stdlib/async/">std.async</a>, <a href="../../language/reference/stdlib/traits/">std.traits</a>, and <a href="../../language/reference/stdlib/derives/">std.derives</a>.</p>
+<h3 id="a-much-stronger-rust-interop-story">A much stronger Rust interop story</h3>
+<p>If <code>0.1</code> established that Incan could talk to Rust, <code>0.2</code> is the release where that boundary becomes much more usable in practice.</p>
+<p>You can now describe Rust-backed types more directly, declare Rust crate dependencies more clearly, import Rust items with better diagnostics, carry more borrowed-type information through the pipeline, and rely on much stronger docs for <code>rusttype</code>, <code>interop:</code> adapters, coercions, and capability-oriented generic bounds. That matters because Rust interop is not a niche escape hatch in Incan; it is part of the main workflow for real projects.</p>
+<p>For that part of the release, start with <a href="../../language/how-to/rust_interop/">Rust interop</a>, <a href="../../language/how-to/rust_types_for_python_devs/">Understanding Rust types (coming from Python)</a>, <a href="../../language/reference/derives_and_traits/">Traits and derives reference</a>, and <a href="../../language/reference/stdlib/traits/">std.traits</a>.</p>
+<h3 id="incan-libraries-experimental">Incan Libraries (Experimental)</h3>
+<p><code>0.2</code> introduces the first cut of <strong>Incan Libraries</strong>. You can now build an Incan project as a library and consume its public API from another Incan project. The current scope is intentionally conservative, but it is the first real answer to “how do I share Incan code across projects?”</p>
+<h3 id="building-a-library">Building a library</h3>
+<pre><code class="language-bash">incan build --lib path/to/project
+</code></pre>
+<p>This generates a <code>.incnlib</code> library manifest describing the public API of your library.</p>
+<h3 id="consuming-a-library">Consuming a library</h3>
+<p>Add the library to your <code>incan.toml</code>:</p>
+<pre><code class="language-toml">[dependencies]
+mylib = { path = &quot;../mylib&quot; }
+</code></pre>
+<p>And import it in your Incan code using the <code>pub::</code> namespace prefix:</p>
+<pre><code class="language-incan">from pub::mylib import my_function
+
+def main() -&gt; None:
+    my_function()
+</code></pre>
+<p>Library support is still early. The current release is built around local path dependencies and public API manifests, not a full package ecosystem.</p>
+<p>For adjacent docs, the best starting points are <a href="../../language/reference/imports_and_modules/">Imports and modules</a> and <a href="../../language/tutorials/build_your_first_api/">Build your first API</a>, which show the project/module organization style <code>0.2</code> now leans into.</p>
+<h2 id="module-static-storage">Module Static Storage</h2>
+<p><code>0.2</code> adds a new top-level declaration form: <code>static</code> ([RFC 052], #242).</p>
+<p>Use <code>static</code> when a module needs one live storage cell that persists across calls, for example counters, registries, caches, or shared mutable collections.</p>
+<p><code>static</code> is intentionally distinct from <code>const</code>:</p>
+<ul>
+<li><code>const</code> remains compile-time, deeply immutable, and baked into the output program</li>
+<li><code>static</code> is runtime-initialized, live, and mutable through the ordinary assignment, method, and indexing paths</li>
+</ul>
+<p>This release also includes <code>pub static</code>, so library modules can export live shared state through library manifests and <code>pub::</code> imports rather than only exporting frozen compile-time constants.</p>
+<p>Example:</p>
+<p>```incan title="analytics.incn"
+pub static hits: int = 0</p>
+<p>pub def record_hit() -&gt; None:
+    hits += 1</p>
+<pre><code>
+```incan title=&quot;consumer.incn&quot;
+from analytics import hits, record_hit
+
+def main() -&gt; None:
+    record_hit()
+    println(hits)  # reads the current live value
+</code></pre>
+<p>See also: <a href="../../language/reference/static_storage/">Static storage (reference)</a>, <a href="../../language/how-to/module_state/">Module state</a>, <a href="../../language/explanation/static_storage/">Static storage (explanation)</a></p>
+<h2 id="call-site-type-arguments-rfc-054-266-call-site-type-arguments">Call-site type arguments ([RFC 054], #266) {#call-site-type-arguments}</h2>
+<p>Calls and method calls may now supply explicit generic type arguments in brackets immediately before the value argument list, for example <code>id[int](1)</code> or <code>box.get[int](1)</code>. The <code>_</code> placeholder still allows inference for selected positions, so forms like <code>pair_map[int, _](1, 2)</code> remain concise. Unsupported call forms now fail clearly instead of silently ignoring explicit brackets. See <a href="../../language/reference/derives_and_traits/#call-site-type-arguments">Call-site type arguments</a> for the full rules and examples.</p>
+<h2 id="other-v02-features">Other v0.2 features</h2>
+<p>Other <code>0.2</code> areas that are worth reading directly in the docs are <a href="../../language/how-to/rust_interop/">Rust interop</a>, <a href="../../language/reference/stdlib/reflection/">Reflection</a>, <a href="../../language/reference/derives_and_traits/">Traits and derives</a>, <a href="../../language/tutorials/book/05_modules_and_imports/">book chapter: modules and imports</a>, and <a href="../../language/tutorials/book/11_traits_and_derives/">book chapter: traits and derives</a>.</p>
+<h2 id="features-and-enhancements">Features and Enhancements</h2>
+<p>The sections above are the release story. The list below is the detailed inventory of language, compiler, runtime, tooling, and docs changes that shipped in <code>0.2</code>.</p>
+<ul>
+<li><strong>Compiler</strong>: Namespaced stdlib imports under <code>std.*</code> — all stdlib modules use qualified paths ([RFC 022]).</li>
+<li><strong>Compiler</strong>: New <code>static</code> keyword for module-owned runtime state, plus <code>pub static</code> exports through library manifests and <code>pub::</code> imports ([RFC 052], #242). See <a href="#module-static-storage">Module Static Storage</a>.</li>
+<li><strong>Parser/formatter</strong>: Parenthesized multi-line import lists are supported for both <code>from module import (...)</code> and <code>from rust::crate import (...)</code>, with optional per-item aliases and formatter-aware wrapping (#116).</li>
+<li><strong>Compiler</strong>: Import-activated soft keywords — <code>async</code> and <code>await</code> are identifiers by default and become reserved only when <code>import std.async</code> (or <code>from std.async...</code>) is present. Forgetting the import produces a targeted diagnostic with a fix suggestion. Similarly, <code>std.testing</code> activates the <code>assert</code> statement syntax ([RFC 023]).</li>
+<li><strong>Compiler</strong>: Surface Semantics Engine — soft keywords (<code>assert</code>, <code>async</code>, <code>await</code>) and decorator semantics are routed through a registry-driven dispatch system (<code>SurfaceSemanticsPack</code>). The parser emits generic <code>Surface</code> AST nodes keyed by <code>SurfaceFeatureKey</code>; downstream stages dispatch on that key rather than per-keyword AST variants. Adding a new soft keyword requires no parser, AST, or IR changes — only a keyword descriptor and a semantics-pack handler ([RFC 023]).</li>
+<li><strong>Compiler</strong>: <code>incan-vocab</code> establishes a standalone, registry-driven keyword/manifest/desugaring contract for future library vocabulary extensions, and core tooling consumers now read keyword surface data through that shared registry path ([RFC 027], #161).</li>
+<li><strong>Compiler</strong>: First-class named function references — named <code>def</code> functions can now be passed as values, stored in variables, and placed in collections without wrapping in a closure. <code>Callable[Params, R]</code> is accepted as syntactic sugar for <code>(Params) -&gt; R</code> and desugared at parse time. Generic function references are explicitly rejected with a clear diagnostic ([RFC 035], #169).</li>
+<li><strong>Compiler</strong>: Explicit call-site type arguments on direct calls and method calls (<code>name[T](...)</code>, <code>recv.method[T](...)</code>), including <code>_</code> placeholders for positions inferred from value arguments; unsupported call forms error instead of ignoring brackets ([RFC 054], #266). See <a href="#call-site-type-arguments">Call-site type arguments</a>.</li>
+<li><strong>Runtime / Compiler</strong>: Strict collection indexing/method failures and strict string-to-number conversions now surface canonical Incan runtime diagnostics such as <code>KeyError</code>, <code>IndexError</code>, and <code>ValueError</code> instead of leaking raw backend panic wrappers (#81).</li>
+<li><strong>Compiler</strong>: Traits are now always abstract, trait names and generic trait instantiations are valid annotation types, and traits may adopt supertraits with <code>with</code>, enabling transitive capability hierarchies like <code>DataSet[T]</code> / <code>BoundedDataSet[T]</code> ([RFC 042], #179).</li>
+<li><strong>Compiler</strong>: Namespaced decorator resolution — decorators resolved by module path (e.g., <code>from std.web.routing import route</code> enables <code>@route(...)</code>) with alias support ([RFC 022]).</li>
+<li><strong>Compiler</strong>: <code>@rust.extern</code> marker for Rust-backed function stubs, replacing the internal <code>@std.builtin</code> decorator ([RFC 022], [RFC 023]).</li>
+<li><strong>Compiler</strong>: <code>@staticmethod</code> decorator for type-scoped methods with no <code>self</code> receiver, available on <code>class</code>, <code>model</code>, and <code>newtype</code> declarations. Required for <code>@rust.extern</code> methods on types (instance delegation is not supported).</li>
+<li><strong>Testing</strong>: <code>std.testing</code> is now surface-first: assertion and marker-facing API is defined in ordinary stdlib source, while runtime-backed helpers are kept only where required for semantics. <code>fail_t</code> remains the panic host boundary, marker functions keep metadata-backed runtime entry points, and <code>assert_raises</code> is tracked as a known blocker until parser-level <code>assert &lt;expr&gt; raises &lt;Type&gt;</code> support and panic payload capture are both implemented. (#302)</li>
+<li><strong>Runtime / Compiler</strong>: <code>std.serde.json.Serialize</code> now provides a source-defined default <code>to_json()</code> path for explicit <code>with Serialize</code> adopters, while lowering forwards that trait adoption into the matching Rust <code>serde::Serialize</code> derive so the direct-interop body compiles honestly. <code>Deserialize.from_json()</code> remains the irreducible host boundary for now. (#303)</li>
+<li><strong>Compiler / Stdlib</strong>: <code>std.reflection</code> now typechecks <code>__class_name__()</code> and <code>__fields__()</code> against their real surface types (<code>str</code> and <code>FrozenList[FieldInfo]</code>) instead of backend-only unknown fallbacks. Plain reflection use no longer requires importing <code>FieldInfo</code>; explicit type annotations still do. (#304)</li>
+<li><strong>Compiler / Stdlib</strong>: <code>std.derives.{comparison,copying,string}</code> no longer model derive-provided methods as <code>rust.module()</code> helper shims. These traits now live as source-defined capability contracts, while codegen continues to realize <code>@derive(...)</code> through ordinary Rust derive attributes on the adopting type. (#305)</li>
+<li><strong>Compiler / Stdlib</strong>: <code>std.traits.*</code> now has a curated stdlib reference entry, and <code>std.traits.{convert,ops,error,indexing,callable,prelude}</code> now has compiled-source coverage proving they compile directly from <code>.incn</code> source without <code>rust.module()</code> / <code>@rust.extern</code> helper shims. <code>std.traits.convert</code> now closes through <code>@classmethod</code> conversion hooks for <code>from</code> / <code>try_from</code>; broader Rust trait-impl authoring on wrappers remains RFC 043 work. (#306, #344)</li>
+<li><strong>Testing / Stdlib</strong>: RFC 023’s remaining behavioral-equivalence lane is now covered by an integration fixture that exercises migrated source-defined stdlib behavior end-to-end: explicit <code>std.serde.json.Serialize</code> adoption, <code>std.reflection</code> metadata, and derive-backed <code>Clone</code> / <code>Eq</code> / <code>Ord</code> / <code>Default</code> behavior on the same model. (#158)</li>
+<li><strong>Runtime / Compiler</strong>: <code>std.math</code> closeout alignment now keeps direct Rust interop wrappers while ensuring the module contract is consistent across typechecking, codegen, and docs (including <code>round</code>, <code>log2</code>, <code>atan2</code>, and <code>hypot</code>; uppercase constants such as <code>math.PI</code>) (#307).</li>
+<li><strong>Runtime / Compiler</strong>: Issue #301 <code>std.async</code> direct-interoperability closeout for <code>std.async.time</code> and <code>std.async.select</code> is complete. These modules now expose their runtime-facing API via direct Rust imports (<code>clamp_seconds</code> / <code>clamp_millis</code> helpers, <code>tokio</code> time primitives) while preserving the public <code>std.async.*</code> contract and error/return behavior. Remaining async modules (<code>task</code>, <code>sync</code>, <code>channel</code>, <code>prelude</code>) are still under conversion to preserve behaviorful/native wrappers.</li>
+<li><strong>Compiler</strong>: Stdlib namespace registry (<code>STDLIB_NAMESPACES</code>) replaces the flat stdlib-module list — convention-based submodule discovery, registry-driven unknown-module diagnostics, and soft-keyword activation metadata.</li>
+<li><strong>Compiler</strong>: Reserved root namespaces — <code>std</code> and <code>rust</code> cannot be used as user declaration names.</li>
+<li><strong>Compiler</strong>: Stdlib types require explicit imports with actionable error messages when used without import.</li>
+<li><strong>Compiler</strong>: <code>from rust import &lt;crate&gt;</code> syntax for importing Rust crates — the compiler validates imports against <code>[rust-dependencies]</code> in <code>incan.toml</code> and emits the correct <code>use</code> statements in generated Rust ([RFC 013]).</li>
+<li><strong>Compiler</strong>: <code>rust::</code> paths accept segments whose spellings match Incan keywords (for example Rust modules named <code>type</code>), and <code>from rust::... import</code> can import such symbols — use <code>as</code> for a safe local name (e.g. <code>from rust::my_crate::proto import type as proto_type</code>) (#197).</li>
+<li><strong>Compiler</strong>: <code>rust-inspect</code> is now caller-owned again instead of ambient in <code>TypeChecker</code>, which fixes the accidental repo-root extraction regression in plain semantic/test paths and restores cheap permissive handling for unextracted Rust members.</li>
+<li><strong>Compiler</strong>: project-local rust-inspect caches now persist extracted RFC 041 item metadata under <code>target/incan_lock</code>, so generated metadata workspaces can reuse extracted items across sessions instead of rebuilding every lookup from scratch.</li>
+<li><strong>Tooling</strong>: Regenerating the stub Cargo workspace under <code>target/incan_lock</code> is skipped when a fingerprint of the dependency graph, <code>Cargo.lock</code> payload, stdlib feature flags, and edition matches the on-disk marker, which avoids redundant work across repeated <code>incan test</code> cases in the same package (#268).</li>
+<li><strong>Tooling</strong>: <code>incan test</code> reuses a session cache of parsed tests, collected source modules, resolved Rust dependencies, and lock payloads when multiple collected tests share the same test file contents and <code>incan.toml</code> inputs, so parametrized variants and multi-test files avoid repeating that front-end work (#269).</li>
+<li><strong>Tooling</strong>: <code>incan test</code> runs all collected cases from the same <code>.incn</code> file in a single generated library crate via <code>cargo test</code> (one Cargo invocation per test file), cutting repeated compile/link overhead for multi-test and parametrized files (#271).</li>
+<li><strong>Compiler</strong>: Borrowed Rust free-function signatures now preserve <code>&amp;T</code> / <code>&amp;mut T</code> semantics through more of the typechecker, lowering, and emission pipeline, including generated-lock metadata workspaces and typed imported callees. Some downstream rust-inspect dependency-loading gaps are still being closed (#257).</li>
+<li><strong>Compiler</strong>: <code>rusttype</code> backing types may use Rust-style qualified paths after a <code>rust::</code> import binding (e.g. <code>type Binary = rusttype proto_type::Binary</code> when <code>proto_type</code> is an imported module). Generics on qualified paths (<code>a::B[T]</code>) are rejected at parse time with a clear diagnostic (#197).</li>
+<li><strong>Tooling</strong>: <code>make build</code> in the Incan repository symlinks <code>~/.cargo/bin/incan</code> and <code>~/.cargo/bin/incan-lsp</code> to the workspace <code>target/debug</code> binaries when not running under CI (opt out with <code>INCAN_SKIP_CARGO_BIN_LINK=1</code>), so the CLI and language server on your PATH match the checkout without a separate <code>cargo install</code>.</li>
+<li><strong>Compiler</strong>: Rust crate dependency management with inline version annotations, manifest-based configuration, version validation (semver), and lock files for reproducible builds ([RFC 013]).</li>
+<li><strong>Compiler</strong>: RFC 041 first-class Rust interop authoring surface: <code>rusttype</code> declarations, <code>interop:</code> edge blocks, and <code>std.rust</code> capability markers used in generic <code>with</code> bounds ([RFC 041], #175).</li>
+<li><strong>Compiler/LSP</strong>: Imported prost <code>oneof</code> payloads now keep their concrete field/variant typing through CLI and editor analysis, so matches like <code>Some(RelType.Read(read))</code> on imported Rust-backed fields resolve <code>read</code> reliably instead of degrading to placeholder <code>T</code> (#218).</li>
+<li><strong>Compiler</strong>: Empty list literals now preserve destination element typing in typed call, assignment, and test-runner codegen paths, avoiding generated Rust inference failures for cases like <code>List[str]</code> parameters receiving <code>[]</code> (#229).</li>
+<li><strong>Compiler</strong>: <code>List[Self]</code> method returns now accept list literals containing explicit instances of the enclosing class when those constructor arguments determine the same owner type, instead of degrading to <code>List[Owner[?]]</code> mismatches (#230).</li>
+<li><strong>Compiler</strong>: Generic model and class field access now resolves declared fields through the concrete owner instantiation, so expressions like <code>boxed.value</code> typecheck correctly for receivers such as <code>Boxed[T]</code> instead of reporting a false missing-field error (#231).</li>
+<li><strong>Tooling</strong>: LSP document symbols, hover, and completions now include <code>newtype</code>/<code>rusttype</code> and <code>type</code> alias declarations. Hovering over a <code>rusttype</code> shows the canonical Rust path of the underlying type ([RFC 041]).</li>
+<li><strong>Compiler</strong>: Convention-based source root resolution — the compiler and test runner resolve user module imports against <code>src/</code> (or an explicit <code>[build] source-root</code>) so imports are uniform across source and test files ([RFC 015]).</li>
+<li><strong>Web</strong>: Compiler-to-stdlib routing handoff via <code>incan_stdlib</code> macros ([RFC 022]).</li>
+<li><strong>Web</strong>: Web-free compiler — all web-specific knowledge (route registration, extractor types, response builders) lives in <code>std.web</code> stdlib modules and the <code>incan_web_macros</code> proc-macro crate. The compiler uses generic decorator passthrough (<code>@rust.extern</code> + <code>rust.module()</code>) and derive passthrough (<code>@derive(X)</code> from <code>rust.module()</code> traits) with no domain-specific web logic in the compiler core ([RFC 023]).</li>
+<li><strong>Web</strong>: Import-driven web feature activation — importing <code>std.web</code> automatically enables <code>axum</code>, <code>incan_web_macros</code>, and <code>inventory</code> dependencies in the generated project ([RFC 023]).</li>
+<li><strong>Runtime</strong>: <code>incan_stdlib::r#async</code> now provides the narrow Rust runtime leaves behind the source-declared <code>std.async</code> modules, rather than exposing the async surface as a raw Tokio re-export facade.</li>
+<li><strong>Tooling</strong>: <code>incan init</code> scaffolds a full project: <code>src/main.incn</code>, <code>tests/test_main.incn</code>, and <code>incan.toml</code> with <code>[project.scripts] main</code> set ([RFC 015]).</li>
+<li><strong>Tooling</strong>: <code>incan lock</code> generates <code>incan.lock</code> for reproducible builds; <code>--locked</code> and <code>--frozen</code> flags enforce lock freshness in CI ([RFC 013]).</li>
+<li><strong>Tooling</strong>: Test runner resolves imports against the project source root, enabling tests to import directly from source modules (e.g., <code>from greet import greet</code>) without duplication ([RFC 015]).</li>
+<li><strong>Tooling</strong>: Test marker semantics (<code>@skip</code>, <code>@xfail</code>, <code>@slow</code>, <code>@fixture</code>, <code>@parametrize</code>) are derived from <code>std.testing</code> metadata instead of brittle string/path hardcoding ([RFC 023]).</li>
+<li><strong>Parser</strong>: <code>async</code> is allowed as a module path segment in imports (e.g., <code>from std.async.time import sleep</code>).</li>
+<li><strong>Diagnostics</strong>: Clearer error messages for unknown decorators and reserved namespace violations.</li>
+<li><strong>Diagnostics</strong>: Enhanced lock-out-of-date error with expected vs actual fingerprint for easier debugging.</li>
+<li><strong>Compiler</strong>: <code>rust::core</code> and <code>rust::alloc</code> are now rejected at the typechecker level with a targeted diagnostic pointing users to <code>rust::std::...</code> instead (reserved for future <code>no_std</code>/target work) ([RFC 005]).</li>
+<li><strong>Diagnostics</strong>: Rust interop dependency errors now include the import site path and a hint to verify the crate/module/item path or add version/features in <code>incan.toml</code> ([RFC 005], [RFC 013]).</li>
+<li><strong>Docs</strong>: "Your first Incan project" tutorial covering <code>incan init</code>, modules, and testing.</li>
+<li><strong>Docs</strong>: Rust interoperability how-to expanded with <code>rusttype</code>, <code>interop:</code> adapters, capability bounds from <code>std.rust</code>, and explicit Rust-boundary coercion guidance ([RFC 041], #175). The same guide now covers keyword-named Rust path segments, qualified <code>rusttype</code> backing paths, and the LSP page recommends <code>make build</code> for keeping CLI and <code>incan-lsp</code> aligned (#197).</li>
+<li><strong>Docs</strong>: Contributor docs now describe the registry-driven keyword path, including <code>incan-vocab</code>, parser <code>Ident</code> keyword handling, and generated VS Code grammar synchronization ([RFC 027]).</li>
+<li><strong>Codegen</strong>: String literals passed to external Rust type methods now emit <code>.into()</code> instead of <code>.to_string()</code>, letting the Rust compiler resolve custom string types (e.g. Polars' <code>PlSmallStr</code>) via the <code>Into</code> trait.</li>
+<li><strong>Compiler</strong>: MSRV bumped from 1.85 to 1.91 (required by the current compiler/runtime/tooling dependency set, including <code>wasmtime</code> 40.x and rust-analyzer metadata crates).</li>
+<li><strong>Compiler/Tooling</strong>: AST expression traversal for serde runtime detection and test-fixture teardown discovery is now centralized through a shared walker, closing false-negative gaps in contexts like <code>elif</code> branches and loop condition/iterator expressions (#123).</li>
+<li><strong>Compiler</strong>: Explicit generic <code>with</code> bounds now use nominal trait conformance (including transitive supertraits and trait-typed arguments) for non-builtin trait capabilities, so capability-constrained APIs are enforced without receiver-name special-casing (#299).</li>
+</ul>
+<h2 id="bugfixes">Bugfixes</h2>
+<ul>
+<li><strong>Compiler/Codegen</strong>: Filtered comprehensions over borrowed iterables now lower through borrow-safe filtering paths instead of move-inducing <code>filter(|&amp;item| ...)</code>, fixing Rust <code>E0507</code> failures in real programs such as Prism store traversals and keeping predicate closures aligned with Rust’s reference semantics (#364).</li>
+<li><strong>Compiler/Codegen</strong>: <code>Ok("...")</code> in <code>Result[str, E]</code> contexts now lowers to owned <code>String</code> payloads, so generic result flows no longer require <code>Ok(str("..."))</code> workarounds in downstream code (#367).</li>
+<li><strong>Compiler/Codegen</strong>: Struct constructors now materialize owned fields correctly when cloning from borrowed <code>self</code>, fixing Rust <code>E0507</code> move errors in <code>clone(self) -&gt; Self</code> implementations such as <code>ActiveRegistration(logical_name=self.logical_name, ...)</code> in downstream <code>InQL</code> code (#366).</li>
+<li><strong>Compiler/Codegen</strong>: Borrowed list loops over imported enums now emit owned enum values, so direct variant comparisons and by-value helper calls no longer require manual <code>.clone()</code> workarounds in downstream code such as <code>InQL</code> conformance validators (#372).</li>
+<li><strong>Compiler</strong>: Qualified enum constructor patterns like <code>ConformanceRel.Filter =&gt;</code> now resolve correctly against enum scrutinees in <code>match</code> arms, so library code no longer has to rewrite valid enum matches into <code>if/elif</code> ladders as a compiler workaround (#374).</li>
+<li><strong>Compiler/Codegen</strong>: Imported and user-defined helpers that share names with core builtins now keep their ordinary function resolution through typechecking, lowering, and Rust emission, so aggregate-builder libraries no longer need aliasing workarounds like <code>sum as agg_sum</code>, and async <code>sleep</code> now consistently follows stdlib import semantics instead of a legacy builtin side path (#377).</li>
+<li><strong>Tooling</strong>: Generated <code>incan test</code> harnesses now reset their runtime cwd to the owning project root, so fixture paths like <code>tests/fixtures/orders.csv</code> resolve the same way in single-file and batched test runs (#378).</li>
+<li><strong>Compiler</strong>: <code>pub from ... import ...</code> now works in any module under <code>src/</code> (not just <code>src/lib.incn</code>), which unblocks package submodule facades that re-export symbols for parent imports like <code>from session import Session</code> (#287).</li>
+<li><strong>Compiler/Codegen</strong>: Multi-file generated Rust now escapes keyword-named module declarations consistently with explicit <code>#[path = ...]</code> attributes, so top-level and nested modules whose names collide with Rust keywords build and run cleanly through the full pipeline (#122).</li>
+<li><strong>Compiler / Stdlib</strong>: Lists now support <code>list + list</code> concatenation and <code>list.extend(other)</code> with Python-like source-list preservation, so combining lists no longer fails at typecheck/codegen time or consumes the original bindings unexpectedly (#181).</li>
+<li><strong>Tooling</strong>: <code>incan.toml</code> parsing and validation errors now include manifest line/column locations across malformed TOML, conflicting dependency sections, unknown fields, and dependency-entry shape/type errors, making migration and dependency configuration failures much easier to locate (#130).</li>
+<li><strong>Tooling</strong>: <code>incan test &lt;single-file&gt;</code> now isolates generated per-file harness crates and resolves outcomes against the requested file only, fixing cross-wired runs that could report <code>Test runner did not report outcome</code> for unrelated tests (#288).</li>
+<li><strong>Tooling/Performance</strong>: <code>incan test</code> now reuses shared build and rust-inspect metadata caches more aggressively, reducing repeated cold-start overhead between runs, especially across multi-file test sessions (#288).</li>
+<li><strong>Compiler/Tooling</strong>: <code>await expr?</code> now lowers/emits in Rust-safe order (<code>expr.await?</code>), and <code>incan fmt</code> preserves escaped f-string newlines as <code>\\n</code> text instead of materializing physical newlines that can trigger <code>Unterminated f-string</code> parse errors (#289).</li>
+<li><strong>Compiler</strong>: Cyclic cross-module projects now resolve imported dependencies during per-module typechecking by import graph (not discovery order), so direct explicit call-site generic calls like <code>collect_with_active_session[T](...)</code> no longer fail with a false unsupported-call-form diagnostic in <code>incan run</code> / <code>incan --check</code> flows (#279).</li>
+<li><strong>Tooling/Codegen</strong>: Generated projects now resolve relative entry paths correctly and emit cleaner Rust for internal module calls and module statics, reducing false errors and compiler-noise in real project workflows.</li>
+<li><strong>Compiler/Core</strong>: Shared language registries now resolve builtin/trait/operator metadata through exhaustive enum matches instead of panic-backed <code>.expect(...)</code> lookups, tightening internal compiler invariants and guardrail coverage (#346).</li>
+<li><strong>Compiler</strong>: rust-inspect now recovers concrete borrowed function parameter pointee types from source when rust-analyzer degrades them to placeholders like <code>&amp;?</code>, so imported Rust calls keep exact borrowed contracts during typechecking and generated-lock workspace interop paths (#259).</li>
+<li><strong>Compiler</strong>: Generic instance methods on classes, traits, models, and newtypes now parse and flow through formatting, typechecking, lowering, and library export metadata correctly (#253).</li>
+<li><strong>Compiler</strong>: Locals initialized from call expressions now preserve the callee's declared result type through later field access, method chaining, and <code>match</code> scrutinees. This fixes false receiver-typed errors after static factory calls such as <code>Session.default()</code> and the related local-inference family regressions (#252, #255).</li>
+<li><strong>Tooling</strong>: <code>incan fmt</code> keeps qualified enum/constructor match patterns in the dot form (<code>Type.Variant</code>), instead of rewriting them to <code>Type::Variant</code>, which the parser does not accept in pattern position (#235).</li>
+<li><strong>Tooling</strong>: <code>incan fmt</code> re-emits numeric literals using their source spelling (integer and float, including <code>_</code> separators and <code>E</code>/<code>e</code> in float exponents), avoiding <code>Display</code> normalization such as <code>120.0</code> → <code>120</code> or <code>1_000</code> → <code>1000</code>, so comment reattachment keeps standalone <code>#</code> lines next to the right statements instead of moving them to the end of a block (#250).</li>
+<li><strong>Tooling</strong>: <code>incan fmt</code> preserves a single blank line between statements in indented blocks (functions, control flow, match arms, vocab bodies, and similar) and collapses two or more consecutive empty lines down to one.</li>
+<li><strong>Tooling</strong>: <code>incan fmt</code> preserves <code>mut</code> markers on function parameters instead of rewriting signatures as immutable parameters, preventing downstream mutable-borrow compile failures after formatting (#264).</li>
+<li><strong>Tooling</strong>: <code>incan run</code> now defaults to Cargo's debug profile for faster cold-start iteration, supports explicit <code>--release</code> for optimized runs, and prints clear build-phase progress before program execution so first-run compiles no longer look hung (#276).</li>
+<li><strong>Compiler/Codegen</strong>: Checked <code>newtype</code> constructors no longer emit <code>.expect(...)</code> extraction in generated Rust. The success path is lowered as an explicit <code>match</code>, keeping emitted Rust valid while preserving the existing panic-on-invalid-construction contract.</li>
+<li><strong>Compiler</strong>: <code>pub::</code> library consumers now preserve transitive imported method result types and trait/supertrait compatibility, so calls like <code>lazy.collect()?</code> keep their <code>Result[...]</code> contract and <code>DataFrame[T]</code> values satisfy <code>DataSet[T]</code> parameters across library boundaries (#277, #278).</li>
+<li><strong>Parser/formatter</strong>: Leading <code>"""..."""</code> docstrings at the start of <code>model</code>, <code>class</code>, <code>enum</code>, <code>trait</code>, and <code>newtype</code> bodies are stored on the AST and round-trip through <code>incan fmt</code> instead of being discarded. Public (<code>pub</code>) type-like declarations expose that doc text to library tooling via <code>exported_type_like_docs</code> (#247).</li>
+<li><strong>Compiler</strong>: Method dispatch on generic classes and models now substitutes <code>Self</code> in formal parameters and return types using the <strong>instantiated</strong> receiver at the call site, so carriers like <code>LazyFrame[Order]</code> no longer mis-type chained calls as bare <code>Self</code> (#237).</li>
+<li><strong>Compiler</strong>: Call-site codegen no longer applies Incan’s generic <code>.clone()</code> materialization to mutable aggregate parameters (lists, dicts, and similar) that are lowered as <code>&amp;mut</code> in Rust, fixing rustc <code>E0308</code> mismatches (<code>expected &amp;mut Vec</code>, <code>found Vec</code>) for recursive or loop-nested calls that re-use the same <code>mut</code> collections (#244).</li>
+<li><strong>Compiler</strong>: Receiver-sensitive known-method lowering prevents non-string <code>.join(...)</code> calls from mis-emitting as <code>incan_stdlib::strings::str_join</code> (#236).</li>
+<li><strong>Compiler</strong>: <code>match</code> on <code>rusttype</code>-wrapped Rust enums and oneof-shaped values now binds variant payload names inside the arm body (same scoping rules as Incan enums), fixing unknown-symbol errors when inspecting imported protobuf-style types ([RFC 005], [RFC 041], #217).</li>
+<li><strong>Compiler</strong>: <code>await</code> is rejected when it appears outside an <code>async def</code> or async method body, matching async/await scoping rules (#210).</li>
+<li><strong>Compiler</strong>: <code>for ... in</code> over a variable-bound <code>list</code> of enums now iterates with owned enum values in generated Rust, so comparisons such as <code>item == some_enum</code> compile without comparing <code>&amp;E</code> to <code>E</code> (#195).</li>
+<li><strong>Compiler</strong>: <code>list.pop()</code> no longer lowers to <code>Vec::pop().unwrap_or_default()</code>, so element types do not need <code>Default</code> (e.g. Clone-only models). Popping an empty list now raises <code>IndexError: pop from empty list</code>, matching Python (#194).</li>
+<li><strong>Compiler</strong>: Types with <code>@derive(Clone)</code> now typecheck direct <code>.clone()</code> on concrete receivers (models and enums), matching behavior already allowed through unconstrained generics; builtin trait vocabulary stubs load method signatures from stdlib when needed (#193).</li>
+<li><strong>Diagnostics</strong>: Unknown symbol errors in f-string interpolations now point to the precise <code>{expr}</code> span (including nested interpolation expressions) instead of the full f-string ([RFC 011], #71).</li>
+<li><strong>Compiler</strong>: Fixed project root resolving to empty string when running <code>incan run src/main.incn</code> from the project directory, causing "No such file or directory" errors.</li>
+<li><strong>Compiler</strong>: Trait-typed values are now correctly assignable to supertrait return types in function returns and generic upcasts with compatible type arguments ([RFC 042], #184).</li>
+<li><strong>Docs</strong>: Web tutorial examples updated to <code>std.web</code> imports and namespaced decorators.</li>
+<li><strong>Docs</strong>: Derives and traits explanation updated to use <code>@rust.extern</code>.</li>
+<li><strong>Tooling</strong>: <code>incan fmt</code> no longer appends an extra blank line at end of file — output ends with a single trailing newline (#189).</li>
+<li><strong>Compiler</strong>: Trait bound inference now covers trait methods and impl methods, not just standalone functions. Generic bounds required by return types (e.g., <code>impl BoundedDataSet&lt;T&gt;</code>) are properly inferred and emitted in the Rust codegen, even when the bounds aren't used in the function body (#196).</li>
+<li><strong>Compiler/Tooling</strong>: Library builds now treat <code>mod.incn</code> as a directory entrypoint instead of a semantic module segment, so nested package modules no longer leak <code>crate::&lt;module&gt;::r#mod</code> paths or stale flat-vs-nested Rust files during <code>incan build --lib</code> (#227).</li>
+<li><strong>Compiler</strong>: <code>len(...)</code> now lowers to a parse-safe <code>usize -&gt; i64</code> expression in generated Rust comparisons, so expressions like <code>len(xs) &lt; 2</code> no longer fail emission with a Rust syntax error (#380).</li>
+</ul>
+<h2 id="known-limitations-02">Known limitations (0.2)</h2>
+<ul>
+<li>Web route handlers and their request models must be declared <code>pub</code> for cross-module wrapper generation (#117).</li>
+<li>Rust macro syntax (e.g., <code>serde_json::json!(...)</code>) is not supported in Incan source — use Rust crate functions and types directly instead.</li>
+<li><strong>Compiler</strong>: In some method-call shapes involving field-backed values, ownership lowering can still require an explicit <code>.clone()</code> to satisfy generated Rust, even though Incan is intended to hide borrow-checker mechanics from user code (#241). Targeted for the <code>0.3 Release</code> milestone.</li>
+</ul>
+<h2 id="rfcs-implemented">RFCs implemented</h2>
+<ul>
+<li>First-class named function references and <code>Callable</code> sugar: [RFC 035]</li>
+<li>Namespaced stdlib modules and compiler-to-stdlib handoff: [RFC 022]</li>
+<li>Compilable stdlib and Rust module binding (web-free compiler): [RFC 023]</li>
+<li>Library vocabularies, registry-driven keyword activation, and vocab desugaring: [RFC 027]</li>
+<li>Module static storage: [RFC 052]</li>
+<li>Rust crate dependency management: [RFC 013]</li>
+<li>Hatch-like tooling (partial — <code>incan init</code>, project discovery, source root resolution): [RFC 015]</li>
+<li>Rust interop surface (<code>rust::</code> imports, type mapping, string borrow adaptation, curated derives): [RFC 005]</li>
+<li>Precise f-string interpolation diagnostics: [RFC 011]</li>
+<li>Trait supertrait assignability and generic upcasts: [RFC 042]</li>
+<li>Trait bound inference for trait/impl methods and return types: [RFC 023]</li>
+<li>Explicit call-site generic arguments (including <code>_</code> inference placeholders): [RFC 054]</li>
+</ul>
+<p>--8&lt;-- "_snippets/rfcs_refs.md"</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

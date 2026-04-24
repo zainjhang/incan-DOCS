@@ -2,6 +2,13 @@ site_name: Incan Documentation
 theme:
   name: material
   palette:
-    - scheme: slate
+        - scheme: slate
       primary: amber
       accent: amber
+  features:
+        - navigation.tabs
+        - navigation.sections
+        - navigation.expand
+
+extra_css:
+    - stylesheets/extra.css

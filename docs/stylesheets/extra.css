@@ -1,0 +1,10 @@
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0a0a0a;
+  --md-default-bg-color--light: #0a0a0a;
+  --md-default-bg-color--lighter: #0a0a0a;
+  --md-default-bg-color--lightest: #0a0a0a;
+}
+
+body {
+  background-color: #0a0a0a !important;
+}

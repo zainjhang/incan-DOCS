@@ -1,3 +1,9 @@
+.md-header {
+  background-color: #FFC107 !important;
+}
+.md-tabs {
+  background-color: #FFC107 !important;
+}
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: #0a0a0a;
   --md-default-bg-color--light: #0a0a0a;

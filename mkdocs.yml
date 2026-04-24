@@ -3,8 +3,6 @@ theme:
   name: material
   palette:
         - scheme: slate
-      primary: amber
-      accent: amber
   features:
         - navigation.tabs
         - navigation.sections

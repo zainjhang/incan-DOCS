@@ -1,7 +1,5 @@
 site_name: Incan
 docs_dir: docs
-# site_url: https://zainjhang.github.io/incan-DOCS/  ← ISKO COMMENT KAR
-# repo_url: https://github.com/zainjhang/incan-DOCS  ← ISKO BHI
 
 theme:
   name: material
@@ -15,6 +13,9 @@ extra:
   generator: false
   css:
         - stylesheets/incan.css
+
+nav:
+    - Home: index.md
 
 static_templates:
     - 404.html

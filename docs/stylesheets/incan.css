@@ -89,4 +89,14 @@ body, .md-container, .md-main {
 .md-typeset__scrollwrap {
   background: #2a2a2a !important;
 }
+/* Material table wrapper nuke */
+.md-typeset__table {
+  background: #1f1f1f !important;
+}
+.md-typeset__scrollwrap {
+  background: #1f1f1f !important;
+}
+[data-md-color-scheme="slate"] .md-typeset table {
+  background-color: #1f1f1f !important;
+}
 

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Incan Docs - Danny Style</title>
+  <title>Incan Documentation</title>
   <style>
     body {
       background: #1a1a1a;
       color: #e0e0e0;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       margin: 0;
     }
     .header {
@@ -19,15 +19,19 @@
     }
     .content {
       padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
     h2 {
       color: #F5C542;
+      margin-top: 40px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
       background: #1f1f1f;
-      margin-top: 20px;
+      margin: 20px 0;
+      border: 1px solid #404040;
     }
     th {
       background: #111111;
@@ -41,9 +45,16 @@
       padding: 12px;
       border: 1px solid #404040;
       color: #e0e0e0;
+      background: #1f1f1f;
     }
-    tr:hover {
+    tr:hover td {
       background: #2a2a2a;
+    }
+    code {
+      background: #111111;
+      color: #F5C542;
+      padding: 2px 6px;
+      border-radius: 3px;
     }
   </style>
 </head>
@@ -63,18 +74,49 @@
       </thead>
       <tbody>
         <tr>
-          <td>Incan Test</td>
-          <td>Testing the Incan framework</td>
+          <td>Getting Started</td>
+          <td>Installation and first steps</td>
         </tr>
         <tr>
-          <td>Incan Test</td>
-          <td>Another test case for Incan</td>
+          <td>Editor Setup</td>
+          <td>IDE configuration and syntax highlighting</td>
+        </tr>
+        <tr>
+          <td>Language Server</td>
+          <td>LSP for diagnostics, hover, and go-to-definition</td>
+        </tr>
+        <tr>
+          <td>Formatting</td>
+          <td>Code formatter <code>incan fmt</code></td>
+        </tr>
+        <tr>
+          <td>Testing</td>
+          <td>Test runner <code>incan test</code></td>
         </tr>
       </tbody>
     </table>
 
     <h2>Language Guide</h2>
     <p>How to write Incan code: Language.</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Document</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Syntax</td>
+          <td>Core language syntax and grammar</td>
+        </tr>
+        <tr>
+          <td>Types</td>
+          <td>Type system and annotations</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </body>
 </html>

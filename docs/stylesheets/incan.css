@@ -1,0 +1,50 @@
+/* DANNY MEIJER STYLE - ZAIN BHAI */
+
+/* 1. Header restyle - hide nahi karna */
+.md-header {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #404040 !important;
+  box-shadow: none !important;
+}
+
+.md-header__title {
+  color: #F5C542 !important;
+  font-weight: 700 !important;
+}
+
+/* 2. Dark BG poori site */
+body, .md-container, .md-main {
+  background: #1a1a1a !important;
+}
+
+/* 3. Main content ko bounding box */
+.md-content__inner {
+  background: #242424 !important;
+  border: 1px solid #404040 !important;
+  border-radius: 12px !important;
+  padding: 2rem !important;
+  margin: 2rem 1rem !important;
+}
+
+/* 4. h1 Danny style */
+.md-typeset h1 {
+  color: #F5C542 !important;
+  font-weight: 700 !important;
+  border-bottom: 1px solid #404040 !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* 5. Sidebars ko bhi card */
+.md-sidebar__scrollwrap {
+  background: #242424 !important;
+  border: 1px solid #404040 !important;
+  border-radius: 12px !important;
+  padding: 1rem !important;
+  margin: 2rem 0 !important;
+}
+
+/* 6. Tabs bhi dark kar do */
+.md-tabs {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #404040 !important;
+}

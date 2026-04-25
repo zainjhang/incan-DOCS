@@ -100,4 +100,26 @@ body, .md-container, .md-main {
 [data-md-color-scheme="slate"] .md-typeset table {
   background-color: #1f1f1f !important;
 }
+/* DANNY TABLE - ATOMIC BOMB LEVEL 9999 */
+html[data-md-color-scheme="slate"] body .md-content .md-typeset__table,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset__scrollwrap,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset table,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset table *,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset thead,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset tbody,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset tr,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset th,
+html[data-md-color-scheme="slate"] body .md-content .md-typeset td {
+  background: #1f1f1f !important;
+  background-color: #1f1f1f !important;
+  color: #e0e0e0 !important;
+  border-color: #404040 !important;
+}
+
+html[data-md-color-scheme="slate"] body .md-content .md-typeset table thead th {
+  background: #111111 !important;
+  background-color: #111111 !important;
+  color: #F5C542 !important;
+  border-bottom: 3px solid #F5C542 !important;
+}
 

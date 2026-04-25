@@ -1,29 +1,41 @@
-/* DANNY SITE + TABLE - SAB KUCH EK FILE MEIN */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #111111;
-  --md-accent-fg-color: #F5C542;
+/* DANNY FINAL BOSS KILLER 99999 */
+html {
+  color-scheme: dark;
 }
 
+/* 1. Header Peela */
 [data-md-color-scheme="slate"] .md-header {
   background: #111111 !important;
   border-bottom: 2px solid #F5C542 !important;
 }
 
-/* DANNY TABLE - FINAL BOSS KILLER */
-.md-typeset table, .md-typeset table * {
+/* 2. TABLE KAALI - HAR DIV KE ANDAR GHUS KE */
+.md-typeset .md-typeset__table table,
+.md-typeset .md-typeset__table table tbody,
+.md-typeset .md-typeset__table table thead,
+.md-typeset .md-typeset__table table tr,
+.md-typeset .md-typeset__table table th,
+.md-typeset .md-typeset__table table td,
+.md-typeset table,
+.md-typeset table *,
+div[data-md-component="content"] table,
+div[data-md-component="content"] table * {
   background: #1f1f1f !important;
   background-color: #1f1f1f !important;
   color: #e0e0e0 !important;
   border-color: #404040 !important;
 }
 
-.md-typeset thead th {
+/* 3. HEADER PEELA + BOLD */
+.md-typeset table thead tr th {
   background: #111111 !important;
   background-color: #111111 !important;
   color: #F5C542 !important;
   border-bottom: 3px solid #F5C542 !important;
+  font-weight: 700 !important;
 }
 
-.md-typeset tbody tr:hover {
+/* 4. HOVER EFFECT */
+.md-typeset table tbody tr:hover {
   background: #2a2a2a !important;
 }

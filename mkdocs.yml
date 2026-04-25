@@ -1,7 +1,20 @@
-site_name: Incan Documentation
+site_name: Incan
+docs_dir: docs
+# site_url: https://zainjhang.github.io/incan-DOCS/  ← ISKO COMMENT KAR
+# repo_url: https://github.com/zainjhang/incan-DOCS  ← ISKO BHI
+
 theme:
   name: material
   palette:
-    - scheme: slate
-      primary: amber
-      accent: amber
+        - scheme: slate
+  features:
+        - navigation.tabs
+        - toc.integrate
+
+extra:
+  generator: false
+  css:
+        - stylesheets/incan.css
+
+static_templates:
+    - 404.html

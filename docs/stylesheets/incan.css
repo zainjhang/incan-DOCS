@@ -59,28 +59,29 @@ body, .md-container, .md-main {
 .md-typeset table:not([class]) td {
   border-color: #333!important;
 }
-/* DANNY TABLE NUKE - FORCE DARK */
-.md-typeset table {
-  background-color: #2a2a2a !important;
+/* DANNY TABLE - INSPECT PROOF FINAL */
+.md-content .md-typeset__scrollwrap,
+.md-content .md-typeset__table,
+.md-content .md-typeset table,
+.md-content .md-typeset thead,
+.md-content .md-typeset tbody,
+.md-content .md-typeset tr,
+.md-content .md-typeset th,
+.md-content .md-typeset td {
+  background-color: #1f1f1f !important;
   color: #e0e0e0 !important;
-  border: 1px solid #404040 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
+  border-color: #404040 !important;
 }
-.md-typeset table thead {
-  background-color: #1a1a1a !important;
-}
-.md-typeset table thead th {
-  background-color: #1a1a1a !important;
+
+.md-content .md-typeset thead th {
+  background-color: #111111 !important;
   color: #F5C542 !important;
+  border-bottom: 3px solid #F5C542 !important;
   font-weight: 700 !important;
-  border-bottom: 2px solid #F5C542 !important;
 }
-.md-typeset table tbody tr {
+
+.md-content .md-typeset tbody tr:hover td {
   background-color: #2a2a2a !important;
-  border-bottom: 1px solid #333 !important;
-}
-.md-typeset table tbody tr:hover {
-  background-color: #333333 !important;
 }
 .md-typeset table td {
   border-color: #404040 !important;

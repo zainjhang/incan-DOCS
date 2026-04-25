@@ -1,12 +1,21 @@
-site_name: Incan Documentation
+site_name: Incan
+docs_dir: docs
+
 theme:
   name: material
   palette:
         - scheme: slate
   features:
         - navigation.tabs
-        - navigation.sections
-        - navigation.expand
+        - toc.integrate
 
-extra_css:
-    - stylesheets/extra.css
+extra:
+  generator: false
+  css:
+        - stylesheets/incan.css
+
+nav:
+    - Home: index.md
+
+static_templates:
+    - 404.html

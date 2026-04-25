@@ -1,128 +1,50 @@
-/* ZAIN BHAI FINAL FINAL - TABLE LINKS BLACK ✅ */
+/* DANNY MEIJER STYLE - ZAIN BHAI */
 
-:root {
-  --md-primary-fg-color: #000000!important;
-  --md-primary-fg-color--light: #000000!important;
-  --md-primary-fg-color--dark: #000000!important;
-  --md-accent-fg-color: #FFD700!important;
-}
-
-/* HEADER - 95% BLACK, CORNER GOLD */
+/* 1. Header restyle - hide nahi karna */
 .md-header {
-  background: #000000!important;
-  background: linear-gradient(to right,
-    #000000 0%,
-    #000000 95%,
-    #FFD700 99.5%,
-    #FFD700 100%)!important;
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #404040 !important;
+  box-shadow: none !important;
 }
 
-.md-header[data-md-state="shadow"] {
-  background: #000000!important;
-  background: linear-gradient(to right,
-    #000000 0%,
-    #000000 95%,
-    #FFD700 99.5%,
-    #FFD700 100%)!important;
-}
-
-/* TITLE + TABS */
 .md-header__title {
-  color: #FFD700!important;
-  font-weight: 700!important;
+  color: #F5C542 !important;
+  font-weight: 700 !important;
 }
 
+/* 2. Dark BG poori site */
+body, .md-container, .md-main {
+  background: #1a1a1a !important;
+}
+
+/* 3. Main content ko bounding box */
+.md-content__inner {
+  background: #242424 !important;
+  border: 1px solid #404040 !important;
+  border-radius: 12px !important;
+  padding: 2rem !important;
+  margin: 2rem 1rem !important;
+}
+
+/* 4. h1 Danny style */
+.md-typeset h1 {
+  color: #F5C542 !important;
+  font-weight: 700 !important;
+  border-bottom: 1px solid #404040 !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* 5. Sidebars ko bhi card */
+.md-sidebar__scrollwrap {
+  background: #242424 !important;
+  border: 1px solid #404040 !important;
+  border-radius: 12px !important;
+  padding: 1rem !important;
+  margin: 2rem 0 !important;
+}
+
+/* 6. Tabs bhi dark kar do */
 .md-tabs {
-  background: #000000!important;
-  background: linear-gradient(to right,
-    #000000 0%,
-    #000000 96%,
-    #FFD700 99.5%,
-    #FFD700 100%)!important;
-  border-bottom: 1px solid #FFD700!important;
-}
-
-.md-tabs__link {
-  color: #FFD700!important;
-}
-
-.md-tabs__link--active {
-  color: #000000!important;
-  background: #FFD700!important;
-}
-
-/* BODY BLACK */
-body,.md-main,.md-container {
-  background-color: #1a1a1a!important;
-}
-
-.md-main__inner,.md-content {
-  background-color: #1a1a1a!important;
-}
-
-/* TEXT WHITE */
-.md-typeset {
-  color: #FFFFFF!important;
-}
-
-.md-typeset p,.md-typeset li {
-  color: #FFFFFF!important;
-}
-
-/* HEADINGS GOLD */
-.md-typeset h1,.md-typeset h2,.md-typeset h3,
-.md-typeset h4,.md-typeset h5,.md-typeset h6 {
-  color: #FFD700!important;
-}
-
-/* NORMAL LINKS GOLD */
-.md-typeset a {
-  color: #FFD700!important;
-}
-.md-typeset a:hover {
-  color: #FFFFFF!important;
-}
-
-/* TABLE WHITE + TEXT BLACK - MAIN FIX */
-.md-typeset table:not([class]) {
-  background-color: #ffffff!important;
-  color: #000000!important;
-}
-
-/* TABLE HEADER - GOLD BG, BLACK TEXT */
-.md-typeset table thead th,
-.md-typeset table thead td {
-  background-color: #FFD700!important;
-  color: #000000!important;
-  font-weight: 700!important;
-}
-
-/* TABLE BODY - BLACK TEXT */
-.md-typeset table tbody td {
-  color: #000000!important;
-}
-
-/* TABLE KE ANDAR LINKS BLACK - YEHI MASLA THA */
-.md-typeset table a,
-.md-typeset table a:visited,
-.md-typeset table a:hover,
-.md-typeset table tbody a {
-  color: #000000!important;
-  text-decoration: none!important;
-  font-weight: 500!important;
-}
-
-/* SIDEBAR */
-.md-nav__link {
-  color: #e0e0e0!important;
-}
-
-.md-nav__link--active {
-  color: #FFD700!important;
-}
-
-/* SEARCH */
-.md-search__input {
-  background-color: #000000!important;
-  color: #FFD700!important;
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #404040 !important;
 }

@@ -9,10 +9,11 @@ theme:
         - navigation.tabs
         - toc.integrate
 
+extra_css:
+    - stylesheets/incan.css
+
 extra:
   generator: false
-  css:
-        - stylesheets/incan.css
 
 nav:
     - Home: index.md
